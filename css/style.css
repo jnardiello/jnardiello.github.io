@@ -47,15 +47,15 @@ who {
 
 
 articles {
-    padding: 10% 0 0 10%;
+    padding: 25px 0 0 10%;
     display: block;
 }
 
 h1 {
-    font: bold 30px 'Roboto', helvetica;
+    font: bold 40px 'Roboto', helvetica;
     width: 90%;
     margin-top: 10%;
-    padding: 25px 0 25px 10%;
+    padding: 25px 0 0 10%;
     border-top: solid 1px rgba(132, 132, 132, 0.50);
     /*border-bottom: solid 1px rgba(132, 132, 132, 0.50);
     background-color: rgba(229, 229, 229, 0.70);*/
