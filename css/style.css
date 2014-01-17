@@ -2,10 +2,11 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
-/*  Index */
+/*  index */
+
 
 author {
-    width: 480px;
+    max-width: 480px;
     margin: 10% 0 0 10%;
     display: block;
     font: 400 25px 'Cambo', sans-serif;
@@ -37,4 +38,39 @@ who {
     line-height: 32px;
     margin-bottom: 10px;
     color: #bfbdbd;
+}
+
+
+
+
+/* mobile */
+
+@media screen and (max-width: 620px) {
+
+    author {
+        font: 400 18px 'Cambo', sans-serif;
+        text-align: center;
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    author a {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    author a:first-of-type {
+        margin-top: 30px;
+    }
+
+    name {
+        font: bold 30px 'Roboto', helvetica;
+        text-align: center;
+    }
+
+    who {
+        line-height: 22px;
+    }
 }
