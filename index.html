@@ -9,9 +9,11 @@ title: Jacopo Nardiello
 </author>
 <h1>Latest Articles</h1>
 <articles>
-    {% for post in site.posts %}
-    {% if post.language == 'italian' %}
-    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-    {% endif %}
+    {% for post in site.posts offset: 0 limit: 5 %}
+
+        <article>
+            <publication-date>{{ post.date | date_to_string }}</publication-date><headline><a href="{{ post.url }}">{{ post.title }}</a></headline>
+        </article>
+
     {% endfor %}
 </articles>
