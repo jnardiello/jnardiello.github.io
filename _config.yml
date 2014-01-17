@@ -1,0 +1,14 @@
+title: Jacopo Nardiello
+url: http://jnardiello.eu
+
+author:
+    name: Jacopo Nardiello
+    uri: http://jnardiello.eu
+
+timezone: UTC
+markdown: redcarpet
+pygments: true
+
+
+kramdown:
+    input: GFM

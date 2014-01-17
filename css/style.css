@@ -1,0 +1,40 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+/*  Index */
+
+author {
+    width: 480px;
+    margin: 10% 0 0 10%;
+    display: block;
+    font: 400 25px 'Cambo', sans-serif;
+}
+
+author a {
+    font-size: 14px;
+    margin-left: 25px;
+    color: #3f3f3f;
+}
+
+author a:first-of-type {
+    margin-left: 0;
+}
+
+author a:hover {
+    color: #848484;
+}
+
+name {
+    display: block;
+    font: bold 50px 'Roboto', helvetica;
+    line-height: 55px;
+    margin-bottom: 25px;
+}
+
+who {
+    display: block;
+    line-height: 32px;
+    margin-bottom: 10px;
+    color: #bfbdbd;
+}
