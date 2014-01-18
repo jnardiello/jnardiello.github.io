@@ -1,0 +1,23 @@
+post {
+    width: 480px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 95px;
+}
+
+
+author {
+    font: bold 21px 'Roboto', helvetica;
+    line-height: 25px;
+    color: #e0e0e0;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    display: block;
+}
+
+post h1 {
+    font: bold 50px 'Roboto', helvetica;
+    line-height: 55px;
+    color: black;
+    display: block;
+}

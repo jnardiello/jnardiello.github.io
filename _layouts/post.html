@@ -1,9 +1,27 @@
----
-layout: default
----
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
 
-<div class="post">
-{{ content }}
-</div>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/post.css">
+
+    <!-- Typography -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cambo' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <post>
+        <author>Jacopo Nardiello</author>
+        <h1>{{ page.title }}</h1>
+        <!-- <p class="meta">{{ page.date | date_to_string }}</p> -->
+
+        <post>
+            {{ content }}
+        </post>
+    </post>
+</body>
+</html>
