@@ -75,13 +75,21 @@ post .highlight {
     border-top: 1px solid rgba(132, 132, 132, 0.45);
     border-bottom: 1px solid rgba(132, 132, 132, 0.45);
     margin-bottom: 25px;
-    margin-top: -10px;
 }
 
 post .highlight pre {
     max-width: 550px;
     margin-left: auto;
     margin-right: auto;
+}
+
+date {
+    position: fixed;
+    display: block;
+    top: 25px;
+    right: 50px;
+    color: #e0e0e0;
+    font: normal 15px 'Cambo';
 }
 
 p code, post .highlight {
@@ -121,12 +129,17 @@ Mobile
 **/
 
 @media screen and (max-width: 590px) {
-    author, h1, post p, post h2, post h3, post h4, post h5, post h6, post .highlight pre {
+    author, h1, post p, post h2, post h3, post h4, post h5, post h6, post .highlight pre, date {
         margin-right: 10px;
         margin-left: 10px;
     }
 
     article-header {
+        margin-top: 5px;
+    }
+
+    date {
+        position: static;
         margin-top: 45px;
     }
 }

@@ -4,17 +4,16 @@ title: Jacopo Nardiello
 ---
 
 <author>
-    <name>Jacopo Nardiello</name>
-    <who>Programmer and Computer Scientist. <!-- Head of technology at Boxify, Indie Author and --> Open Source enthusiast. I love Zen, XP and 5S methodologies.</who>
-    <a href="http://twitter.com/jnardiello" target="_blank">@jnardiello</a><a href="http://github.com/jnardiello" target="_blank">github/jnardiello</a><a href="http://it.linkedin.com/in/jnardiello" target="_blank">linkedin/jnardiello</a>
+    <name>{{ site.author.name }}</name>
+    <who>{{ site.author.description }}</who>
+    <a href="http://twitter.com/{{ site.author.twitter }}" target="_blank">@{{ site.author.twitter }}</a><a href="http://github.com/{{ site.author.github }}" target="_blank">github/{{ site.author.github }}</a><a href="http://it.linkedin.com/in/{{ site.author.linkedin }}" target="_blank">linkedin/{{ site.author.linkedin }}</a>
 </author>
 <h1>Latest Articles</h1>
 <articles>
-    {% for post in site.posts offset: 0 limit: 10 %}
-        {% if post.language == 'italian' %}
+    {% for post in site.posts limit:10 %}
         <article>
             <publication-date>{{ post.date | date_to_string }}</publication-date><headline><a href="{{ post.url }}">{{ post.title }}</a></headline>
         </article>
-        {% endif %}
     {% endfor %}
 </articles>
+{% include footer.html %}

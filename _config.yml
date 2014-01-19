@@ -3,12 +3,16 @@ url: http://jnardiello.github.io
 
 author:
     name: Jacopo Nardiello
-    uri: http://jnardiello.github.io
+    description: Programmer and Computer Scientist. <!-- Head of technology at Boxify, Indie Author and --> Open Source enthusiast. I love Zen, XP and 5S methodologies.
+    twitter: jnardiello
+    github: jnardiello
+    linkedin: jnardiello
 
 timezone: UTC
 markdown: redcarpet
 pygments: true
 
+permalink: /:title.html
 
 kramdown:
     input: GFM
