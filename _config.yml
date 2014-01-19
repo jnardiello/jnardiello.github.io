@@ -1,9 +1,9 @@
 title: Jacopo Nardiello
-url: http://jnardiello.eu
+url: 0.0.0.0:4000
 
 author:
     name: Jacopo Nardiello
-    uri: http://jnardiello.eu
+    uri: 0.0.0.0:4000
 
 timezone: UTC
 markdown: redcarpet

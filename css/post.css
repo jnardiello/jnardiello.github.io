@@ -1,23 +1,132 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+post, article-header {
+    display: block;
+}
+
 post {
-    width: 480px;
-    display: block;
-    margin: 0 auto;
-    padding-top: 95px;
+    margin-top: 35px;
+}
+
+article-header {
+    margin-top: 90px;
 }
 
 
-author {
-    font: bold 21px 'Roboto', helvetica;
-    line-height: 25px;
-    color: #e0e0e0;
+/* Article header */
+
+article-header * {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 480px;
+    display: block;
+    font-family: 'Roboto', helvetica;
+    font-weight: bold;
+}
+
+article-header author {
+    font-size: 21px;
     text-transform: uppercase;
-    margin-bottom: 35px;
-    display: block;
 }
 
-post h1 {
-    font: bold 50px 'Roboto', helvetica;
+article-header author a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+article-header h1 {
     line-height: 55px;
     color: black;
-    display: block;
+    font-size: 50px;
+}
+
+
+/* Post content */
+
+post p, post h2, post h3, post h4, post h5, post h6 {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 480px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+post h2 {
+    font: bold 27px 'Roboto', sans-serif;
+    line-height: 22px;
+    color: #333333;
+    margin-top: 55px;
+}
+
+post p {
+    font: normal 16px 'Cambo';
+    line-height: 20px;
+    color: #3f3f3f;
+}
+
+post .highlight {
+    border-top: 1px solid rgba(132, 132, 132, 0.45);
+    border-bottom: 1px solid rgba(132, 132, 132, 0.45);
+    margin-bottom: 25px;
+    margin-top: -10px;
+}
+
+post .highlight pre {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p code, post .highlight {
+    background-color: rgba(248, 248, 248, 0.25);
+}
+
+p code {
+    border: 1px solid rgba(132, 132, 132, 0.45);
+    border-radius: 3px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+    font-size: 14px;
+}
+
+blockquote {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote p {
+    border-left: 3px solid #3f3f3f;
+    padding-left: 25px;
+    font: normal 24px 'Roboto', sans-serif;
+    line-height: 36px;
+}
+
+strong {
+    font-weight: 600;
+    color: black;
+}
+
+/**
+Mobile
+**/
+
+@media screen and (max-width: 520px) {
+    author, h1, post p, post h2, post h3, post h4, post h5, post h6, post .highlight pre {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    article-header {
+        margin-top: 45px;
+    }
 }

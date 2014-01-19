@@ -14,14 +14,13 @@
     <link href='http://fonts.googleapis.com/css?family=Cambo' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <post>
-        <author>Jacopo Nardiello</author>
-        <h1>{{ page.title }}</h1>
+        <article-header>
+            <author><a href="{{ author.uri }}">Jacopo Nardiello</a></author>
+            <h1>{{ page.title }}</h1>
+        </article-header>
         <!-- <p class="meta">{{ page.date | date_to_string }}</p> -->
-
         <post>
             {{ content }}
         </post>
-    </post>
 </body>
 </html>
