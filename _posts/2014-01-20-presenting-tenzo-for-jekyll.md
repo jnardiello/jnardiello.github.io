@@ -4,9 +4,9 @@ title:  Presenting Tenzo
 date:   2014-01-20 15:38:00
 ---
 
-[Tenzo](https://github.com/jnardiello/tenzo) is a free minimal theme for Jekyll (and my first open source project). I started crafting it for my own purpose and then decided to add little extra-work and ship a ready-to-use package for the public. If you are curious to see it in action, well, you are already doing so. It runs on my personal website.
+[Tenzo](https://github.com/jnardiello/tenzo) is an essential theme for Jekyll (and my first open source project, be kind!). I started crafting it for my personal website and then decided to add some extra-work and ship a ready-to-use package for the public. If you are curious to see it in action, well, you are already doing so.
 
-Tenzo has been crafted keeping in mind *semplicity*. It's not fancy, it's not extra-packed with features. It is essential and wants to keep the focus on you and on content.
+Tenzo has been crafted keeping *semplicity* in mind. It's not fancy, it's not extra-packed with features. It is essential and wants to keep the focus on you and on content.
 
 ## Typography
 
