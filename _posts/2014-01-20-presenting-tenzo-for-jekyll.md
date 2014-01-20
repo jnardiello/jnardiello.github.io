@@ -6,11 +6,11 @@ date:   2014-01-20 15:38:00
 
 [Tenzo](https://github.com/jnardiello/tenzo) is an essential theme for Jekyll (and my first open source project, be kind!). I started crafting it for my personal website and then decided to add some extra-work and ship a ready-to-use package for the public. If you are curious to see it in action, well, you are already doing so.
 
-Tenzo has been crafted keeping *semplicity* in mind. It's not fancy, it's not extra-packed with features. It is essential and wants to keep the focus on you and on content.
+[Tenzo](https://github.com/jnardiello/tenzo)  has been crafted keeping *semplicity* in mind. It's not fancy, it's not extra-packed with features. It is essential and wants to keep the focus on you and on content.
 
 ## Typography
 
-[Tenzo](https://github.com/jnardiello/tenzo) is based on two fonts: 'Roboto' for headlines and 'Cambo' for paragraphs. It aims to be extra-clear and a pleasure to read. All fonts are completely free, imported via Google fonts.
+Tenzo is based on two fonts: 'Roboto' for headlines and 'Cambo' for paragraphs. It aims to be extra-clear and a pleasure to read. All fonts are completely free, imported via Google fonts.
 
 ## Mobile first
 
