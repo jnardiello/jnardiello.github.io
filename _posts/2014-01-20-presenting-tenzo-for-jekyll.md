@@ -4,13 +4,13 @@ title:  Presenting Tenzo
 date:   2014-01-20 15:38:00
 ---
 
-Tenzo is a free minimal theme for Jekyll. As often happens, i started crafting it for my own purpose and then decided to add little extra-work and ship a ready-to-use package for your personal Jekyll installation. If you are curious to see it in action, well, you are already looking at it. It runs on my personal website.
+[Tenzo](https://github.com/jnardiello/tenzo) is a free minimal theme for Jekyll (and my first open source project). I started crafting it for my own purpose and then decided to add little extra-work and ship a ready-to-use package for the public. If you are curious to see it in action, well, you are already doing so. It runs on my personal website.
 
-Tenzo has been crafted keeping in mind semplicity. It's not fancy, it's not extra-packed with features. It is essential and wants to keep the focus on you and on your content.
+Tenzo has been crafted keeping in mind *semplicity*. It's not fancy, it's not extra-packed with features. It is essential and wants to keep the focus on you and on content.
 
 ## Typography
 
-Tenzo is based on two fonts: 'Roboto' for headlines and 'Cambo' for paragraphs. It aims to be extra-clear and a pleasure to read.
+[Tenzo](https://github.com/jnardiello/tenzo) is based on two fonts: 'Roboto' for headlines and 'Cambo' for paragraphs. It aims to be extra-clear and a pleasure to read. All fonts are completely free, imported via Google fonts.
 
 ## Mobile first
 
@@ -18,9 +18,9 @@ The only thing that matters is what you write. Tenzo will behave very well when 
 
 ## Installation
 
-To use Tenzo, all you have to do is to download or clone the github repo, place it in a working jekyll environment and you should almost be good to go.
+To use Tenzo, all you have to do is to download or clone the github repo, place it in a working jekyll environment and you should almost be good to go. Yes, if you fork the repo on github, *it will be running out of the box with github pages*. Just make sure to rename the repository accordingly.
 
-Then simply open the `_config.yml` and fill in the details. Run `Jekyll serve` and you'll be ready to start writing.
+All the configuration happens in the `_config.yml`. After filling the config file, if you are running a self-hosted (or local) instance Run `Jekyll serve` and you'll be ready to start writing.
 
 ----
 
@@ -75,7 +75,7 @@ And if (by any chance) you want to add a horizontal rule, here is what you get:
 
 ## Bugs and Issues
 
-Tenzo isn't perfect, but aims to be. If you find any bug or if you have any suggestion do not hesitateto contribute on github.
+Tenzo isn't perfect, but aims high. If you find any bug or if you have any suggestion do not hesitateto contribute on github.
 
 ## Credits
 

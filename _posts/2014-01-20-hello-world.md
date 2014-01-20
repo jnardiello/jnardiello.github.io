@@ -10,7 +10,7 @@ For every time i tried, every time i ended up being just frustrated. While reach
 
 So far, everything i tried either required lot of time spent in configuration, unreasonable server/platform costs or my published content was owned by third parties (or a mix of these).
 
-Finally i reached equilibrium. Switched to Jekyll, crafted the theme (Tenzo), hosted on github.
+Finally i reached equilibrium. Switched to Jekyll, crafted the theme ([Tenzo](https://github.com/jnardiello/tenzo)), hosted on github.
 
 Here i'll be writing mostly about coding and computer science, occasionally about math and life. It will be an interesting adventure writing here and i hope that you will enjoy the ride with me. You can follow me on [twitter](http://twitter.com/jnardiello) or add to your favurites the rss feed.
 
