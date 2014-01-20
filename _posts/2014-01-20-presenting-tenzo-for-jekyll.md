@@ -12,7 +12,19 @@ Tenzo has been crafted keeping in mind semplicity. It's not fancy, it's not extr
 
 Tenzo is based on two fonts: 'Roboto' for headlines and 'Cambo' for paragraphs. It aims to be extra-clear and a pleasure to read.
 
-## Style
+## Mobile first
+
+The only thing that matters is what you write. Tenzo will behave very well when displayed on phones and tablets.
+
+## Installation
+
+To use Tenzo, all you have to do is to download or clone the github repo, place it in a working jekyll environment and you should almost be good to go.
+
+Then simply open the `_config.yml` and fill in the details. Run `Jekyll serve` and you'll be ready to start writing.
+
+----
+
+## Styling posts
 
 Tenzo is pure CSS3. There's no Javascript, it doesn't use any plugin.
 
@@ -23,6 +35,7 @@ h1 is reserved for the article main title.
 ## H2 Looks like this
 ### H3 Looks like this
 #### H4 Looks like this
+##### H5 Looks like this
 
 
 ### Code snippets
@@ -55,20 +68,10 @@ Here is how including images looks like:
 
 ### Horizontal rule  
 
-And it by any chance you want to add a horizontal rule, here is what you get:
+And if (by any chance) you want to add a horizontal rule, here is what you get:
 
 -----------
 
-
-## Mobile first
-
-The only thing that matters is what you write. Tenzo will behave very well when displayed on phones and tablets.
-
-## Installation
-
-To use Tenzo, all you have to do is to download or clone the github repo, place it in a working jekyll environment and you should almost be good to go.
-
-Then simply open the `_config.yml` and fill in the details. Run `Jekyll serve` and you'll be ready to start writing.
 
 ## Bugs and Issues
 
