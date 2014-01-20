@@ -60,9 +60,10 @@ post p, post h2, post h3, post h4, post h5, post h6 {
 
 post h2 {
     font: bold 27px 'Roboto', sans-serif;
-    line-height: 22px;
+    line-height: 30px;
     color: #333333;
     margin-top: 55px;
+
 }
 
 post p {
@@ -122,6 +123,10 @@ blockquote p {
 strong {
     font-weight: 600;
     color: black;
+}
+
+img {
+    max-width: 550px;
 }
 
 /**
