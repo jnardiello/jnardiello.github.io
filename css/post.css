@@ -105,12 +105,12 @@ date {
     display: block;
     top: 25px;
     right: 50px;
-    color: #e0e0e0;
+    color: #8A8A8A;
     font: normal 15px 'Cambo';
 }
 
 p code, post .highlight {
-    background-color: rgba(248, 248, 248, 0.25);
+    background-color: rgba(203, 228, 255, 0.25);
 }
 
 p code {
