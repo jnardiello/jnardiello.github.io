@@ -12,18 +12,22 @@ I hope that this post was written with the clear goal of helping others in choos
 
 ## Angular Is Not a Library
 
-To make this point crystal clear, borrowing [Martin Fowler definitions](http://martinfowler.com/bliki/InversionOfControl.html):
-> A library is essentially a set of functions that you can call, these days usually organized into classes. Each call does some work and returns control to the client.
+I see this misunderstanding coming up every single time i speak about Angular with people approaching it for the first time.
+
+To make this point crystal clear i will borrow [Martin Fowler's definitions](http://martinfowler.com/bliki/InversionOfControl.html).
+
+A library is:
+> A set of functions that you can call, these days usually organized into classes. Each call does some work and returns control to the client.
 
 While a framework:
 > A framework embodies some abstract design, with more behavior built in. In order to use it you need to insert your behavior into various places in the framework either by subclassing or by plugging in your own classes. The framework's code then calls your code at these points.
 
-Comparing the two is like comparing PHP and Node.js. Complete nonsense. jQuery gives you mainly object and methods. Angular gives you a design (aka Dependency Injection).
+Comparing the two is complete nonsense. jQuery gives you mainly object and methods. Angular gives you a design.
 
 ## The real value of Angular
 Angular is unique when it comes to front-end frameworks because of one, super-important, point: it makes possible to test Javascript front-end applications without driving you insane. 
 
-Have you ever worked on a project SO complex that no human would ever be able to have a deep knowledge of all the code/domains it is composed by? Imagine a huge App. Used by millions. With some really complex and critical architecture and thousands of lines of code.
+Have you ever worked on a project *so complex* that no single human would ever be able to have a deep knowledge of all of its the code/domains? Like a huge App. Used by millions. With some really complex and critical architecture and thousands of lines of code.
 
 Before deploying such an application you need to make sure that everything is fine and works as expected, downtime would mean hundreds of thousands of dollars lost. Someone might even die. How do you do that? There's only one way: with automatic tests. There are no alternatives.
 
