@@ -1,0 +1,180 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+post, article-header {
+    display: block;
+}
+
+post {
+    margin-top: 35px;
+}
+
+article-header {
+    margin-top: 90px;
+}
+
+
+/* Article header */
+
+article-header * {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 550px;
+    display: block;
+    font-family: 'Roboto', helvetica;
+    font-weight: bold;
+}
+
+article-header author {
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+article-header author a {
+    color: #C0C0C0;
+    text-decoration: none;
+}
+
+article-header h1 {
+    line-height: 55px;
+    color: black;
+    font-size: 50px;
+}
+
+
+/* Post content */
+
+post p, post h2, post h3, post h4, post h5, post h6, post ul, post ol {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 550px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+post h2, post h3, post h4, post h5, post h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #333333;
+}
+
+post h2 {
+    font-size: 27px;
+    line-height: 30px;
+    margin-top: 55px;
+}
+
+post h3 {
+    font-size: 24px;
+}
+
+post h4 {
+    font-size: 20px;
+}
+
+post h5 {
+    font-size: 17px;
+}
+
+post p, post li {
+    font: normal 16px 'Cambo';
+    line-height: 20px;
+    color: #3f3f3f;
+}
+
+post .highlight {
+    border-top: 1px solid rgba(132, 132, 132, 0.45);
+    border-bottom: 1px solid rgba(132, 132, 132, 0.45);
+    margin-bottom: 25px;
+}
+
+post .highlight pre {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+date {
+    position: fixed;
+    display: block;
+    top: 25px;
+    right: 50px;
+    color: #5C5C5C;
+    font: normal 15px 'Cambo';
+}
+
+p code, post .highlight {
+    background-color: rgba(203, 228, 255, 0.25);
+}
+
+p code {
+    border: 1px solid rgba(132, 132, 132, 0.45);
+    border-radius: 3px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+    font-size: 14px;
+}
+
+blockquote {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote p {
+    border-left: 3px solid #3f3f3f;
+    padding-left: 25px;
+    font: normal 24px 'Roboto', sans-serif;
+    line-height: 36px;
+}
+
+strong {
+    font-weight: 600;
+    color: black;
+}
+
+img {
+    max-width: 550px;
+    margin-top: 25px;
+}
+
+hr {
+    width: 550px;
+    border-color: rgba(227, 227, 227, 0.13);
+}
+
+/**
+Mobile
+**/
+
+@media screen and (max-width: 590px) {
+    author, h1, post p, post h2, post h3, post h4, post h5, post h6, post .highlight pre, date, hr {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    article-header {
+        margin-top: 5px;
+    }
+
+    date {
+        position: static;
+        margin-top: 45px;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
