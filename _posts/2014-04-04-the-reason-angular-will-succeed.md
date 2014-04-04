@@ -4,7 +4,7 @@ title:  The reason Angular JS will succeed
 date:   2014-04-04 15:38:00
 ---
 
-Today I came across [http://okmaya.com/2014/03/12/the-reason-angular-js-will-fail/](this article - "The reason AngularJS will fail").
+Today I came across [this article - "The reason AngularJS will fail"](http://okmaya.com/2014/03/12/the-reason-angular-js-will-fail/).
 
 Author argues that Angular *is* complex: complex to approach, complex to learn, complex to use and while i agree with him on this point, pretty much everything else he mentions is just dead wrong. What made me worry about that article isn't the mediocre level of the author, but the fact that the article gained traction and reached the top of HN (gathering way more attention than deserved and spreading nonsense).
 
