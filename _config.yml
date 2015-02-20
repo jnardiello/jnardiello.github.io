@@ -11,6 +11,7 @@ author:
 timezone: UTC
 markdown: redcarpet
 pygments: true
+host:    0.0.0.0
 
 permalink: /:title.html
 
