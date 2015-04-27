@@ -17,3 +17,4 @@ permalink: /:title.html
 
 kramdown:
     input: GFM
+exclude: makefile
