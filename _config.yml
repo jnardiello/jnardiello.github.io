@@ -10,11 +10,11 @@ author:
 
 timezone: UTC
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 host:    0.0.0.0
 
 permalink: /:title.html
 
 kramdown:
     input: GFM
-exclude: makefile
+exclude: [makefile]
