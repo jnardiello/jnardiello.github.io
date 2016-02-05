@@ -13,6 +13,9 @@ During the last year I worked on (many) different things and mostly touched ever
 This was only during our spare time as our main activity at the office was playing street-fighter.
 ![Woaaah]({{ site.url }}/img/street_fighter.jpg)
 
+Or sumo.
+![Sumo]({{ site.url }}/img/sumo.jpg)
+
 ## What didn't go that well
 
 Despite the overall good work we carried on I still feel a few things could have been done in a different (better) way:
