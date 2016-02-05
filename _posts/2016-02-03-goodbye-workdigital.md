@@ -13,8 +13,6 @@ During the last year I worked on (many) different things and mostly touched ever
 This was only during our spare time as our main activity at the office was playing street-fighter.
 ![Woaaah]({{ site.url }}/img/street_fighter.jpg)
 
-All in all, working with the WorkDigital was a hell of a ride that I enjoyed to the last bit. It was fun, it was positive and - most importantly - I worked with colleagues that managed to become good friends as months passed by.
-
 ## What didn't go that well
 
 Despite the overall good work we carried on I still feel a few things could have been done in a different (better) way:
