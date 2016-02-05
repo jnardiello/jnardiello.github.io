@@ -10,7 +10,7 @@ author:
 
 timezone: UTC
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 host:    0.0.0.0
 
 permalink: /:title.html
