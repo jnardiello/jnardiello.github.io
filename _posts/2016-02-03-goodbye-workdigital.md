@@ -26,7 +26,8 @@ Despite the overall good work we carried on I still feel a few things could have
 
 ## A big thank you
 
-Working with the WorkDigital team was a turning point in my career. I learnt a lot, it was a great experience and I met some great people. I really couldn't ask for more.
+Working with the WorkDigital team was a turning point in my career. I learnt a lot, it was a great experience and I met some great people. I really couldn't ask for more.  
+
 > To the whole team, a big thank you. You guys really made my days.
 
 ## What is next
