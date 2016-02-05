@@ -8,9 +8,10 @@ January was my last month at [WorkDigital](http://workdigital.co.uk/) and, more 
 
 ## What I'm really proud of
 
-During the last year I worked on (many) different things and mostly touched every part of the core company platform. A spent time on a wide range of activites spanning from rewriting internal core components, refactoring old bits of forgotten code, played/benchmarked candidate tools and frameworks, cracked the good old "how the hell do we process javascript" problem and mostly annoyed my colleagues with "did you test this and that?". In the meantime I organized and hosted a few meetups in the DHI silicon rounabout offices, worth mentioning [Codebar](http://codebar.io) and the [Global Day of Code Retreat](http://globalday.coderetreat.org/).
+During the last year I worked on (many) different things and mostly touched every part of the core company platform. I spent time on a wide range of activites spanning from rewriting internal core components, refactoring old bits of forgotten code, played/benchmarked candidate tools and frameworks, cracked the good old "how the hell do we process javascript" problem and mostly annoyed my colleagues with "did you test this and that?". In the meantime I organized and hosted a few meetups in the DHI silicon rounabout offices, worth mentioning [Codebar](http://codebar.io) and the [Global Day of Code Retreat](http://globalday.coderetreat.org/) with the folks at [@8thligh](http://twitter.com/8thLightInc).  
+![GDCR]({{ site.url }}/img/gdcr.jpg)
 
-This was only during our spare time as our main activity at the office was playing street-fighter.
+But of course, all this was only during our spare time. Our true main activity at the office was playing street-fighter.
 ![Woaaah]({{ site.url }}/img/street_fighter.jpg)
 
 Or sumo.
