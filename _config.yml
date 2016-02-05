@@ -9,7 +9,7 @@ author:
     linkedin: jnardiello
 
 timezone: UTC
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
 host:    0.0.0.0
 
