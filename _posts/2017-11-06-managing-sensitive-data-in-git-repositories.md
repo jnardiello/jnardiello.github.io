@@ -4,15 +4,13 @@ title:  Managinig sensitive data in git repositories
 date:   2017-11-06 23:00:00
 ---
 
-More often than not, especially if you work with operations, you end up managing sensitive data both for your projects or, more importantly, for your clients. Screwing up usually have devastating effects with your projects, infrastructures and accounts getting compromised.
+More often than not, especially if you work with operations, you end up managing sensitive data both for your projects and, more importantly, for your clients. Screwing up usually have devastating consequences.
 
-While some might argue that secrets should be handled carefully and should never - ever - be committed on repositories, I find that this is almost always impossible and you end up having them (if you do a good job organizing your work and files) in some configuration file that you still need to handle.
+While some might argue that secrets should be handled carefully and should never **ever** be committed to repositories, I find that this is almost always impossible. Almost every project at some point will have keys, password, configuration, etc that you will need to handle.
 
-Obviously, rule number zero is to work in private repositories and avoid to expose them to the public , still I think this is not enough. Committing secrets in clear text is **really** a bad idea. What if any of your accounts gets compromised? What if any ill-intentioned individual gain access to your files? This is a situation that can be efficiently mitigated uploading your secrets **encrypted**.
+While many considers private repositories to be secure enough, what if any of your accounts gets compromised? What if an ill-intentioned individual gain access to your private repositories? This is a situation that can be effectively mitigated by simply uploading your secrets **encrypted**. Gaining access to a repo won't be enough, they will also need to have access to your GPG keys.
 
-For this reason, I've used in the past a nice project called [git-crypt](https://github.com/AGWA/git-crypt). This tool lets you transparently manage git encryption, meaning that locally you will have a de-crypted version of your sensitive files, while on commit they will be encrypted.
-
-As a result, all your data will be committed and uploaded to remote repositories fully encrypted and in a worst case scenario where your private repos will be compromised, all the data sensible data will still be inaccessible. Pairing this with a team management system such as [lastpass](full://www.lastpass.com/) to share encryption passwords with your team, let's you have a very efficient and secure way to handle your secrets/
+For this specific purpose, I've used in the past [git-crypt](https://github.com/AGWA/git-crypt). This tool lets you transparently encrypt your sensitive data. Locally you will have a decrypted version of your files, while on commit they will be encrypted and then pushed. Pairing this with a team management system such as [lastpass](full://www.lastpass.com/) to share encryption passwords with your team, let's you have a battle-tested way of handling your secrets.
 
 ## Installing git-crypt on Fedora 26
 
@@ -56,4 +54,4 @@ When cloning an encrypted repository, with the correct GPG key configured, you c
 
 ## Conclusion
 
-This is the best way I've found so far to handle secrets and sensitive data in my projects. Do you have any suggestion? If so, I'd love to hear your opinion.
+This is the best way I've found so far. Do you have any suggestion? If so, I'd love to hear your opinion.
