@@ -34,6 +34,11 @@ author a {
     color: #3f3f3f;
 }
 
+author.a {
+    font-size: 25px;
+    color: #3f3f3f;
+}
+
 author a:first-of-type {
     margin-left: 0;
 }
