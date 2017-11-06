@@ -37,6 +37,7 @@ author a {
 author .sighup {
     font-size: 25px;
     color: #3f3f3f;
+    text-decoration: none;
 }
 
 author a:first-of-type {
