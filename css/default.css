@@ -131,6 +131,14 @@ publication-date {
         margin-left: 0;
     }
 
+    author .sighup {
+        font-size: 18px;
+        color: #3f3f3f;
+        text-decoration: none;
+        margin-top: 0px;
+    }
+
+
     author a:first-of-type {
         margin-top: 30px;
     }
