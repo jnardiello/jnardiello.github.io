@@ -39,7 +39,7 @@ In order to use git-crypt, you need to add your GPG key to the trusted sources w
 git-crypt init
 
 # Add your GPG credentials to unlock the repo
-git-crypt add-gpg-user --trusted USER_ID
+git-crypt add-gpg-user --trusted <USER_ID or gpg email>
 {% endhighlight %}
 
 Once a project is initialized, you must now configure which files you want to encrypt. In order to do that, you should create a `.gitattributes` file and add your sensitive paths there (note that it does support wildcards a bit like your `.gitignore`).
