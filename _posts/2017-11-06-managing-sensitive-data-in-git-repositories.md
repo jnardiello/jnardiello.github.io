@@ -8,7 +8,7 @@ More often than not, especially if you work with operations, you end up managing
 
 While some might argue that secrets should be handled carefully and should never - ever - be committed on repositories, I find that this is almost always impossible and you end up having them (if you do a good job organizing your work and files) in some configuration file that you still need to handle.
 
-Obviously rule number zero is to work in private repositories and avoid to expose them to the public , still I think this is not enough. Committing secrets in clear text is **really** a bad idea. What if any of your accounts gets compromised? What if any ill-intentioned individual gain access to your files? This is a situation that can be efficiently mitigated uploading your secrets **encrypted**.
+Obviously, rule number zero is to work in private repositories and avoid to expose them to the public , still I think this is not enough. Committing secrets in clear text is **really** a bad idea. What if any of your accounts gets compromised? What if any ill-intentioned individual gain access to your files? This is a situation that can be efficiently mitigated uploading your secrets **encrypted**.
 
 For this reason, I've used in the past a nice project called [git-crypt](https://github.com/AGWA/git-crypt). This tool lets you transparently manage git encryption, meaning that locally you will have a de-crypted version of your sensitive files, while on commit they will be encrypted.
 
