@@ -132,6 +132,7 @@ publication-date {
     }
 
     author .sighup {
+        display: inline !important;
         font-size: 18px;
         color: #3f3f3f;
         text-decoration: none;
