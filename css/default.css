@@ -40,7 +40,7 @@ author .sighup {
     text-decoration: none;
 }
 
-author a:first-of-type(2) {
+author a:first-of-type {
     margin-left: 0;
 }
 
