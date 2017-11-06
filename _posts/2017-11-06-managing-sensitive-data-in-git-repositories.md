@@ -20,7 +20,7 @@ While [installing git-crypt](://github.com/AGWA/git-crypt/blob/master/INSTALL.md
 
 In fedora, you must first ensure to have a few dependencies installed before compiling from source.
 
-```bash
+{% highlight bash %}
 # Installing dependencies
 sudo dnf install gcc-c++
 sudo dnf install openssl-devel
@@ -28,27 +28,27 @@ sudo dnf install openssl-devel
 # Insalling git-crypt
 sudo make install PREFIX=/usr/local
 chmod jnardiello:jnardiello git-crypt
-```
+{% endhighlight %}
 
 ## Using git-crypt
 
 In order to use git-crypt, you need to add your GPG key to the trusted sources which can access the decrypted files.
 
-```bash
+{% highlight bash %}
 # Initializing your git-crypt repo
 git-crypt init
 
 # Add your GPG credentials to unlock the repo
 git-crypt add-gpg-user --trusted USER_ID
-
-```
+{% endhighlight %}
 
 Once a project is initialized, you must now configure which files you want to encrypt. In order to do that, you should create a `.gitattributes` file and add your sensitive paths there (note that it does support wildcards a bit like your `.gitignore`).
 
-```
+
+{% highlight bash %}
 # Example of .gitattributes
 *.key filter=git-crypt diff=git-crypt
-```
+{% endhighlight %}
 
 After this is done, the key will be added to `.git-crypt` and the user will be able to decrypt the files.
 
