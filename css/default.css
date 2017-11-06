@@ -135,7 +135,7 @@ publication-date {
         font-size: 18px;
         color: #3f3f3f;
         text-decoration: none;
-        margin-top: 0px;
+        margin-top: 0px !important;
     }
 
 
