@@ -22,7 +22,7 @@ h1 {
 /*  index */
 
 author {
-    max-width: 520px;
+    max-width: 700px;
     display: block;
     font: 400 25px 'Cambo', sans-serif;
     margin: 10% 0 0 10%;
@@ -173,5 +173,44 @@ publication-date {
 
     article headline a {
         font: normal 20px 'Cambo', sans-serif;
+    }
+}
+
+/* Very Large screens */
+
+@media screen and (min-width: 1700px) {
+    h1 {
+        font: bold 45px 'Roboto', helvetica;
+    }
+
+    name {
+        font: bold 60px 'Roboto', helvetica;
+    }
+
+    author {
+        max-width: 1200px;
+        font: 400 35px 'Cambo', sans-serif;
+    }
+
+    author .sighup {
+        font-size: 35px;
+    }
+
+    who {
+        line-height: 40px;
+    }
+
+    author a {
+        font-size: 24px;
+        margin-left: 35px;
+    }
+
+    article headline a {
+        font: normal 30px 'Cambo', sans-serif;
+    }
+
+    publication-date {
+        padding: 0 40px 0 0;
+        font: normal 30px 'Cambo', sans-serif;
     }
 }
