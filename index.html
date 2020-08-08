@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Jacopo Nardiello
 ---
 
 <author>
     <name>{{ site.author.name }}</name>
     <who>{{ site.author.description }}</who>
-    <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">@{{ site.author.twitter }}</a><a href="https://github.com/{{ site.author.github }}" target="_blank">github/{{ site.author.github }}</a><a href="http://it.linkedin.com/in/{{ site.author.linkedin }}" target="_blank">linkedin/{{ site.author.linkedin }}</a>
+    <a href="{{ site.author.twitter.url }}" target="_blank">{{ site.author.twitter.name }}</a>
+    <a href="{{ site.author.github.url }}" target="_blank">{{ site.author.github.name }}</a>
+    <a href="{{ site.author.linkedin.url }}" target="_blank">{{ site.author.linkedin.name }}</a>
 </author>
 <h1>Articles</h1>
 <articles>

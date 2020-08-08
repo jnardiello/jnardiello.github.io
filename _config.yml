@@ -1,12 +1,18 @@
-title: Jacopo Nardiello
+description: Cloud-Native, Kubernetes, Entrepreneurship and stuff I am passionate about 
 url: http://jnardiello.me
 
 author:
     name: Jacopo Nardiello
     description: Programmer and DevOps. Founder <a href="https://sighup.io" class="sighup">@SIGHUP</a>. Mostly Cloud-Native infrastructures, Golang, Kubernetes and containers.
-    twitter: jnardiello
-    github: jnardiello
-    linkedin: jnardiello
+    twitter: 
+      name: "@jnardiello"
+      url: https://twitter.com/jnardiello
+    github: 
+      name: github/jnardiello
+      url: https://github.com/jnardiello
+    linkedin: 
+      name: linkedin/jnardiello
+      url: https://www.linkedin.com/in/jnardiello/
 
 timezone: UTC
 markdown: kramdown
