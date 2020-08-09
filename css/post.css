@@ -2,7 +2,7 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
-* {
+body {
     margin: 0;
     padding: 0;
 }
@@ -84,8 +84,8 @@ post h5 {
 }
 
 post p, post li {
-    font: normal 16px 'Cambo';
-    line-height: 20px;
+    font: normal 20px 'Cambo';
+    line-height: 120%;
     color: #3f3f3f;
 }
 
@@ -157,6 +157,38 @@ hr {
 }
 
 /**
+ * Extra large screens
+ **/
+@media screen and (min-width: 2000px) {
+    /* Article header */
+
+    article-header * {
+        max-width: 1000px;
+    }
+
+    /* Post content */
+    post p, post h2, post h3, post h4, post h5, post h6, post ul, post ol {
+        max-width: 1000px;
+    }
+
+    post .highlight pre {
+        max-width: 1000px;
+    }
+
+    blockquote {
+        max-width: 1000px;
+    }
+
+    img {
+        max-width: 1000px;
+    }
+
+    hr {
+        width: 1000px;
+    }
+}
+
+/**
  * Tablets
  **/
 @media screen and (max-width: 1024px) {
@@ -171,6 +203,10 @@ hr {
 
     article-header {
         margin-top: 30px;
+    }
+
+    post p, post li {
+        font: normal 18px 'Cambo';
     }
 }
 
@@ -208,5 +244,10 @@ Mobile
 
     img {
         width: 100%;
+    }
+
+    post p, post li {
+        font: normal 18px 'Cambo';
+        line-height: 130%;
     }
 }
