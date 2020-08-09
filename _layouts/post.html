@@ -18,7 +18,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cambo' rel='stylesheet' type='text/css'>
 </head>
-<body>
+    <body>
 
         <date>{{ page.date | date: "%-d %B %Y" }}</date>
         <article-header>
@@ -30,5 +30,7 @@
             {{ content }}
         </post>
         {% include footer.html %}
-</body>
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
+    </body>
 </html>
