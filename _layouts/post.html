@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang = "en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }} - {{ site.author.name }}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ page.metadescription }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }} - {{ site.author.name }}</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="{{ page.metadescription }}">
 
-    <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="/css/post.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <link rel="stylesheet" href="/css/pygments.css">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="/css/post.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/pygments.css">
-
-    <!-- Typography -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cambo' rel='stylesheet' type='text/css'>
-</head>
+        <!-- Typography -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cambo' rel='stylesheet' type='text/css'>
+    </head>
     <body>
 
         <date>{{ page.date | date: "%-d %B %Y" }}</date>

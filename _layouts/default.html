@@ -11,12 +11,10 @@
         <link rel="stylesheet" href="/css/default.css">
         <link rel="stylesheet" href="/css/footer-page.css">
 
-        <!-- RSS -->
-        <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
-
         <!-- Typography -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Cambo' rel='stylesheet' type='text/css'>
+        {% feed_meta %}
     </head>
     <body>
         {{ content }}

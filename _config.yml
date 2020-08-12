@@ -28,3 +28,4 @@ exclude: [makefile]
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
