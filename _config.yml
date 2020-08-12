@@ -1,6 +1,6 @@
 title: Cloud-Native, Kubernetes, Entrepreneurship
 description: Jacopo Nardiello's personal blog. Strategic thinking and Technical articles about Kubernetes, Cloud Native, DevOps practices and Entrepreneurship.
-url: http://jnardiello.me
+url: https://jnardiello.me
 
 author:
     name: Jacopo Nardiello
@@ -25,3 +25,6 @@ permalink: /:title.html
 kramdown:
     input: GFM
 exclude: [makefile]
+
+plugins:
+  - jekyll-sitemap
