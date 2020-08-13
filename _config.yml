@@ -1,6 +1,6 @@
-title: Jacopo Nardiello's personal blog: Cloud-Native, Kubernetes, Entrepreneurship
-description: Jacopo Nardiello's personal blog. Strategic thinking and Technical articles about Kubernetes, Cloud Native, DevOps practices and Entrepreneurship.
-url: https://jnardiello.me
+title: "Jacopo Nardiello's personal blog: Cloud-Native, Kubernetes, Entrepreneurship"
+description: "Jacopo Nardiello's personal blog. Strategic thinking and Technical articles about Kubernetes, Cloud Native, DevOps practices and Entrepreneurship."
+url: "https://jnardiello.me"
 
 author:
     name: Jacopo Nardiello
@@ -27,5 +27,5 @@ kramdown:
 exclude: [makefile]
 
 plugins:
-  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-sitemap
