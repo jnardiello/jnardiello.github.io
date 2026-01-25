@@ -4,29 +4,25 @@ title: Talks
 description: Conference talks and presentations by Jacopo Nardiello
 ---
 
+<style>
+.talk-title { margin-bottom: 8px; }
+</style>
+
 <p>A collection of my conference talks and presentations.</p>
 
 {% assign talks_by_year = site.data.talks | group_by_exp: "talk", "talk.date | date: '%Y'" | sort: "name" | reverse %}
 
 {% for year in talks_by_year %}
+{% unless forloop.first %}<hr>{% endunless %}
 <h2>{{ year.name }}</h2>
-<ul>
+
 {% for talk in year.items %}
-    <li>
-        <strong>{{ talk.title }}</strong>
-        <br>
-        <em>{{ talk.event }}</em> — {{ talk.date | date: "%B %Y" }}
-        {% if talk.video or talk.slides %}
-        <br>
-        {% if talk.video %}<a href="{{ talk.video }}" target="_blank">Video</a>{% endif %}
-        {% if talk.video and talk.slides %} | {% endif %}
-        {% if talk.slides %}<a href="{{ talk.slides }}" target="_blank">Slides</a>{% endif %}
-        {% endif %}
-        {% if talk.description %}
-        <br>
-        {{ talk.description }}
-        {% endif %}
-    </li>
+<p class="talk-title"><strong>{{ talk.title }}</strong> {% if talk.language == "it" %}<em>(Italian)</em>{% endif %}<br>
+{{ talk.event }} · {{ talk.date | date: "%B %Y" }}{% if talk.video or talk.slides %} · {% if talk.video %}<a href="{{ talk.video }}" target="_blank">Video</a>{% endif %}{% if talk.video and talk.slides %} · {% endif %}{% if talk.slides %}<a href="{{ talk.slides }}" target="_blank">Slides</a>{% endif %}{% endif %}</p>
+
+{% if talk.description %}
+<p>{{ talk.description }}</p>
+{% endif %}
+
 {% endfor %}
-</ul>
 {% endfor %}

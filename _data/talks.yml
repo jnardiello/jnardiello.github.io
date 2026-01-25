@@ -7,6 +7,7 @@
   slides: "https://www.slideshare.net/slideshow/the-art-of-cloud-native-defense-on-kubernetes-407e/266819534"
   event: "KCD Italy 2024"
   date: "2024-03-16"
+  language: "en"
 
 # 2023
 - title: "Guida galattica per Cloud Native Security su Kubernetes"
@@ -14,6 +15,7 @@
   video: "https://www.youtube.com/watch?v=2LqBOdFHJaY"
   event: "Container Day 2023"
   date: "2023-10-12"
+  language: "it"
 
 # 2022
 - title: "Tales of the Mythical Cloud-Native Platform"
@@ -22,6 +24,7 @@
   slides: "https://www.slideshare.net/slideshow/container-day-2022-tales-of-the-mythical-cloudnative-platform/255133320"
   event: "Container Day 2022"
   date: "2022-10-13"
+  language: "en"
 
 # 2021
 - title: "Fare OpenSource in contesto Enterprise"
@@ -29,6 +32,7 @@
   video: "https://www.youtube.com/watch?v=-Wm95PtsNpc"
   event: "CTO Show"
   date: "2021-01-01"
+  language: "it"
 
 # 2019
 - title: "Anatomy of a Production Grade Kubernetes Cluster"
@@ -36,12 +40,14 @@
   video: "https://www.youtube.com/watch?v=BI1V0Za-6yU"
   event: "Voxxed Days Milan 2019"
   date: "2019-10-12"
+  language: "en"
 
 - title: "Battle Tested K8s: Pitfalls of Running Kubernetes in Production"
   description: "Real-world lessons learned from running Kubernetes in production environments. Common pitfalls and how to avoid them."
   video: "https://www.youtube.com/watch?v=v_05n7ofqK8"
   event: "DevOps Days Istanbul"
   date: "2019-01-01"
+  language: "en"
 
 # 2017
 - title: "Monitoring Cloud-Native Applications with Prometheus"
@@ -49,12 +55,14 @@
   slides: "https://www.slideshare.net/slideshow/monitoring-cloud-native-applications-with-prometheus/77420685"
   event: "Codemotion Milan 2017"
   date: "2017-11-10"
+  language: "en"
 
 - title: "Breaking the Monolith"
   description: "When and how to break monolithic applications into microservices. Covers domain separation, automation requirements, containers, and Kubernetes."
   slides: "https://www.slideshare.net/slideshow/breaking-the-monolith-77420857/77420857"
   event: "Kubernetes and Cloud Native Milano"
   date: "2017-07-01"
+  language: "en"
 
 # 2016
 - title: "Kubernetes 101"
@@ -62,6 +70,7 @@
   slides: "https://www.slideshare.net/slideshow/kubernetes-101/63395213"
   event: "Milano DevOps Meetup"
   date: "2016-06-23"
+  language: "en"
 
 # 2015
 - title: "Becoming a Developer"
@@ -69,6 +78,7 @@
   slides: "https://www.slideshare.net/slideshow/becoming-a-developer/52882338"
   event: "Tech Talk @ DHI Group"
   date: "2015-09-17"
+  language: "en"
 
 # 2014
 - title: "Eventsourcing with PHP and MongoDB"
@@ -76,12 +86,14 @@
   slides: "https://www.slideshare.net/jacoponardiello/eventsourcing-with-php-and-mongodb-41857441"
   event: "NoSQL Day 2014"
   date: "2014-11-21"
+  language: "en"
 
 - title: "Ultimate Introduction To AngularJS"
   description: "Comprehensive introduction to AngularJS framework fundamentals, directives, controllers, and data binding."
   slides: "https://www.slideshare.net/jacoponardiello/ultimate-introduction-to-angularjs-34501849"
   event: "MilanoJS & PHP User Group"
   date: "2014-05-06"
+  language: "en"
 
 - title: "Testing AngularJS"
   description: "Best practices for testing AngularJS applications, including unit tests, E2E testing, and test-driven development approaches."
@@ -89,3 +101,4 @@
   slides: "https://www.slideshare.net/jacoponardiello/testing-angularjs-34501698"
   event: "AngularJS Day"
   date: "2014-03-24"
+  language: "en"
