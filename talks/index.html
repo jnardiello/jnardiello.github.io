@@ -1,0 +1,32 @@
+---
+layout: page
+title: Talks
+description: Conference talks and presentations by Jacopo Nardiello
+---
+
+<p>A collection of my conference talks and presentations.</p>
+
+{% assign talks_by_year = site.data.talks | group_by_exp: "talk", "talk.date | date: '%Y'" | sort: "name" | reverse %}
+
+{% for year in talks_by_year %}
+<h2>{{ year.name }}</h2>
+<ul>
+{% for talk in year.items %}
+    <li>
+        <strong>{{ talk.title }}</strong>
+        <br>
+        <em>{{ talk.event }}</em> — {{ talk.date | date: "%B %Y" }}
+        {% if talk.video or talk.slides %}
+        <br>
+        {% if talk.video %}<a href="{{ talk.video }}" target="_blank">Video</a>{% endif %}
+        {% if talk.video and talk.slides %} | {% endif %}
+        {% if talk.slides %}<a href="{{ talk.slides }}" target="_blank">Slides</a>{% endif %}
+        {% endif %}
+        {% if talk.description %}
+        <br>
+        {{ talk.description }}
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
+{% endfor %}
