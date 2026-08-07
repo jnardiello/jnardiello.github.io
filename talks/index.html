@@ -1,28 +1,31 @@
 ---
-layout: page
+layout: default
 title: Talks
-description: Conference talks and presentations by Jacopo Nardiello
+permalink: /talks/
 ---
-
-<style>
-.talk-title { margin-bottom: 8px; }
-</style>
-
-<p>A collection of my conference talks and presentations.</p>
-
-{% assign talks_by_year = site.data.talks | group_by_exp: "talk", "talk.date | date: '%Y'" | sort: "name" | reverse %}
-
+<section class="page-head accent-bg">
+  <h1>Talks</h1>
+  <p class="mono">Kubernetes, cloud native security, platform engineering &mdash; 2014 to today.</p>
+</section>
+{% assign talks_by_year = site.data.talks | group_by_exp: "t", "t.date | slice: 0, 4" %}
 {% for year in talks_by_year %}
-{% unless forloop.first %}<hr>{% endunless %}
-<h2>{{ year.name }}</h2>
-
-{% for talk in year.items %}
-<p class="talk-title"><strong>{{ talk.title }}</strong> {% if talk.language == "it" %}<em>(Italian)</em>{% endif %}<br>
-{{ talk.event }} · {{ talk.date | date: "%B %Y" }}{% if talk.video or talk.slides %} · {% if talk.video %}<a href="{{ talk.video }}" target="_blank">Video</a>{% endif %}{% if talk.video and talk.slides %} · {% endif %}{% if talk.slides %}<a href="{{ talk.slides }}" target="_blank">Slides</a>{% endif %}{% endif %}</p>
-
-{% if talk.description %}
-<p>{{ talk.description }}</p>
-{% endif %}
-
-{% endfor %}
+<section class="labeled">
+  <div class="labeled-left"><h2 class="big-year">{{ year.name }}</h2></div>
+  <div class="labeled-right no-pad">
+    {% for t in year.items %}
+    <div class="talk-detail">
+      <div class="talk-detail-head">
+        <h3>{{ t.title }}</h3>
+        <span class="mono muted">{{ t.event }}</span>
+      </div>
+      <p>{{ t.description }}</p>
+      <div class="talk-links mono">
+        {% if t.video %}<a class="accent-link" href="{{ t.video }}" target="_blank" rel="noopener">&#9654; VIDEO</a>{% endif %}
+        {% if t.slides %}<a href="{{ t.slides }}" target="_blank" rel="noopener">&#9636; SLIDES</a>{% endif %}
+        {% if t.language == "it" %}<span class="muted">IT</span>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 {% endfor %}

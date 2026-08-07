@@ -1,0 +1,20 @@
+---
+layout: default
+title: Writing
+permalink: /writing/
+---
+<section class="page-head">
+  <h1>Writing</h1>
+  <p class="mono muted">Archive &mdash; notes on infrastructure, engineering and building things.</p>
+</section>
+<section class="post-list">
+  {% for post in site.posts %}
+  <a class="post-row" href="{{ post.url | relative_url }}">
+    <span class="mono muted">{{ post.date | date: "%b %Y" }}</span>
+    <span class="post-row-title">{{ post.title }}</span>
+  </a>
+  {% endfor %}
+</section>
+<section class="rss-band mono">
+  RSS feed available at <a href="{{ '/feed.xml' | relative_url }}">jnardiello.me/feed.xml</a>
+</section>

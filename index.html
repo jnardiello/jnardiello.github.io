@@ -1,21 +1,57 @@
 ---
 layout: default
 ---
+<section class="hero">
+  <div class="hero-text">
+    <h1>I tame<br>and teach<br><span class="accent">machines.</span></h1>
+  </div>
+  <img class="hero-portrait" src="{{ '/img/portrait.png' | relative_url }}" width="190" height="190" alt="Portrait of {{ site.author.name }}">
+</section>
 
-<author>
-    <name>{{ site.author.name }}</name>
-    <who>{{ site.author.description }}</who>
-    <a href="/about/">About</a>
-    <a href="/talks/">Talks</a>
-    <a href="{{ site.author.x.url }}" target="_blank">{{ site.author.x.name }}</a>
-    <a href="{{ site.author.github.url }}" target="_blank">{{ site.author.github.name }}</a>
-    <a href="{{ site.author.linkedin.url }}" target="_blank">{{ site.author.linkedin.name }}</a>
-</author>
-<h1>Articles</h1>
-<articles>
-    {% for post in site.posts limit:10 %}
-        <article>
-            <publication-date>{{ post.date | date_to_string }}</publication-date><headline><a href="{{ post.url }}">{{ post.title }}</a></headline>
-        </article>
+<section class="split">
+  <div class="split-left">
+    <p class="lede">Founded <a href="https://github.com/sighupio" target="_blank" rel="noopener">SIGHUP</a> in 2016 &mdash; one of the leading independent Kubernetes distributions, built entirely in Europe. Now leading Infrastructure Transformation at ING.</p>
+  </div>
+  <div class="split-right mono">
+    <div>&rarr; CNCF Ambassador, 2018</div>
+    <div>&rarr; AWS Container Hero, 2020</div>
+    <div>&rarr; Linux Foundation Europe, Advisory Board</div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="band-head accent-bg">
+    <h2>Talks</h2>
+    <a class="band-link" href="{{ '/talks/' | relative_url }}">ALL &rarr;</a>
+  </div>
+  {% for talk in site.data.talks limit:4 %}
+  <div class="talk-row">
+    <span class="mono year">{{ talk.date | slice: 0, 4 }}</span>
+    {% if talk.video %}<a class="talk-title" href="{{ talk.video }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% elsif talk.slides %}<a class="talk-title" href="{{ talk.slides }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}<span class="talk-title">{{ talk.title }}</span>{% endif %}
+    <span class="mono muted">{{ talk.event }}</span>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="projects">
+  <a class="project" href="https://printfarmhq.io" target="_blank" rel="noopener">
+    <div class="mono kicker">PROJECT 01</div>
+    <div class="project-name">PrintFarmHQ</div>
+    <div class="project-desc">Building a 3D printing farm &mdash; hardware meets orchestration.</div>
+  </a>
+  <a class="project" href="https://github.com/sighupio/distribution" target="_blank" rel="noopener">
+    <div class="mono kicker">PROJECT 02</div>
+    <div class="project-name">SIGHUP Distribution</div>
+    <div class="project-desc">CNCF-certified Kubernetes distribution, created and maintained in Europe.</div>
+  </a>
+</section>
+
+<section class="labeled">
+  <div class="labeled-left"><h2>Archive</h2></div>
+  <div class="labeled-right">
+    {% for post in site.posts limit:3 %}
+    <a class="archive-item" href="{{ post.url | relative_url }}">{{ post.title }} <span class="mono muted">{{ post.date | date: "%Y" }}</span></a>
     {% endfor %}
-</articles>
+    <a class="mono more" href="{{ '/writing/' | relative_url }}">FULL ARCHIVE &rarr;</a>
+  </div>
+</section>

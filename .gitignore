@@ -2,3 +2,6 @@ _site
 .jekyll*
 *sw*
 .claude
+.bundle/
+vendor/
+jnardiello.me redesign.zip
