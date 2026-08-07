@@ -40,23 +40,25 @@ layout: default
   {% endfor %}
 </section>
 
-<section class="labeled">
-  <div class="labeled-left"><h2>Archive</h2></div>
-  <div class="labeled-right no-pad">
-    {% for post in paginator.posts %}
-    <a class="archive-row" href="{{ post.url | relative_url }}">
-      <span class="mono muted">{{ post.date | date: "%b %Y" }}</span>
-      <span class="archive-row-title">{{ post.title | escape }}</span>
-    </a>
-    {% endfor %}
-    {% if paginator.total_pages > 1 %}
-    <nav class="pagination mono" aria-label="Archive pagination">
-      {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">&larr; NEWER</a>{% else %}<span class="disabled">&larr; NEWER</span>{% endif %}
-      <span class="muted">{{ paginator.page }} / {{ paginator.total_pages }}</span>
-      {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">OLDER &rarr;</a>{% else %}<span class="disabled">OLDER &rarr;</span>{% endif %}
-    </nav>
-    {% endif %}
+<section class="band">
+  <div class="band-head dark-bg">
+    <h2>Archive</h2>
+    <span class="mono count">{{ site.posts | size }} POSTS &middot; {{ site.posts.last.date | date: "%Y" }}&mdash;{{ site.posts.first.date | date: "%Y" }}</span>
   </div>
+  {% for post in paginator.posts %}
+  <a class="archive-row" href="{{ post.url | relative_url }}">
+    <span class="mono muted">{{ post.date | date: "%b %Y" }}</span>
+    <span class="archive-row-title">{{ post.title | escape }}</span>
+    <span class="mono read">READ &rarr;</span>
+  </a>
+  {% endfor %}
+  {% if paginator.total_pages > 1 %}
+  <nav class="pagination mono" aria-label="Archive pagination">
+    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">&larr; NEWER</a>{% else %}<span class="disabled">&larr; NEWER</span>{% endif %}
+    <span class="muted">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">OLDER &rarr;</a>{% else %}<span class="disabled">OLDER &rarr;</span>{% endif %}
+  </nav>
+  {% endif %}
 </section>
 
 <section class="labeled">

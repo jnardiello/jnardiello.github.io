@@ -43,7 +43,7 @@ a:hover { color: var(--accent); }
 .talk-row { display: grid; grid-template-columns: 90px 1fr auto; gap: 20px; padding: 18px 40px; border-bottom: 1px solid rgba(28,33,48,0.25); align-items: baseline; }
 .talk-row:last-child { border-bottom: none; }
 .talk-row .year { font-size: 13px; font-weight: 500; }
-.talk-row .talk-title { font-size: 17px; font-weight: 500; text-decoration: none; }
+.talk-row .talk-title { font-size: 19px; font-weight: 500; text-decoration: none; }
 .talk-row .mono.muted { font-size: 11px; }
 
 /* projects */
@@ -132,9 +132,13 @@ figure.highlight { width: 100%; max-width: 100%; margin: 24px 0; }
 .split-right .kicker { font-size: 11px; color: var(--accent); font-weight: 500; }
 .split-right .dim { color: #7d8496; }
 .project-entry-desc { font-size: 11px; line-height: 1.6; padding-left: 18px; margin-top: 3px; }
-.archive-row { display: grid; grid-template-columns: 110px 1fr; gap: 20px; padding: 16px 40px; border-bottom: 1px solid rgba(28,33,48,0.2); align-items: baseline; text-decoration: none; }
+.band-head.dark-bg { background: var(--ink); color: var(--paper); }
+.band-head .count { font-size: 12px; color: #7d8496; }
+.archive-row { display: grid; grid-template-columns: 110px 1fr auto; gap: 24px; padding: 20px 40px; border-bottom: 1px solid rgba(28,33,48,0.2); align-items: baseline; text-decoration: none; }
 .archive-row .mono { font-size: 12px; }
-.archive-row-title { font-size: 16px; font-weight: 500; }
+.archive-row .read { color: var(--accent); }
+.archive-row:hover .read { color: var(--ink); }
+.archive-row-title { font-size: 19px; font-weight: 500; }
 .pagination { display: flex; justify-content: space-between; align-items: baseline; padding: 18px 40px; font-size: 12px; }
 .pagination a { text-decoration: none; color: var(--accent); font-weight: 500; }
 .pagination .disabled { color: #a8a294; }
@@ -154,6 +158,8 @@ figure.highlight { width: 100%; max-width: 100%; margin: 24px 0; }
   .talk-row .mono.muted { grid-column: 2; }
   .post-list .post-row { grid-template-columns: 1fr; gap: 6px; padding: 20px; }
   .archive-row { grid-template-columns: 1fr; gap: 4px; padding: 14px 20px; }
+  .archive-row .read { display: none; }
+  .archive-row-title { font-size: 16px; }
   .pagination { padding: 14px 20px; }
   .post { padding: 0 20px; }
   .band-head { padding: 20px; }
