@@ -25,6 +25,8 @@ highlighter: rouge
 host: 0.0.0.0
 
 permalink: /:title.html
+paginate: 20
+paginate_path: "/page:num/"
 
 kramdown:
     input: GFM
@@ -36,4 +38,5 @@ exclude:
 
 plugins:
   - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap

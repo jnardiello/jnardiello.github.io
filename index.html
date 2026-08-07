@@ -5,7 +5,7 @@ layout: default
   <div class="hero-text">
     <h1>I tame<br>and teach<br><span class="accent">machines.</span></h1>
   </div>
-  <img class="hero-portrait" src="{{ '/img/portrait.png' | relative_url }}" width="190" height="190" alt="Portrait of {{ site.author.name }}">
+  <img class="hero-portrait" src="{{ '/img/portrait.png' | relative_url }}" width="190" height="190" alt="Portrait of {{ site.author.name | escape }}">
 </section>
 
 <section class="split">
@@ -13,9 +13,15 @@ layout: default
     <p class="lede">Founded <a href="https://github.com/sighupio" target="_blank" rel="noopener">SIGHUP</a> in 2016 &mdash; one of the leading independent Kubernetes distributions, built entirely in Europe. Now leading Infrastructure Transformation at ING.</p>
   </div>
   <div class="split-right mono">
-    <div>&rarr; CNCF Ambassador since 2018</div>
-    <div>&rarr; AWS Container Hero since 2020</div>
-    <div>&rarr; Linux Foundation Europe Advisory Board Member since 2023</div>
+    <div class="kicker">PROJECTS</div>
+    <div class="project-entry">
+      <div>&rarr; <a href="https://github.com/sighupio/distribution" target="_blank" rel="noopener">SIGHUP Distribution</a></div>
+      <div class="project-entry-desc dim">CNCF-certified Kubernetes distribution, created and maintained entirely in Europe.</div>
+    </div>
+    <div class="project-entry">
+      <div>&rarr; <a href="https://printfarmhq.io" target="_blank" rel="noopener">PrintFarmHQ</a></div>
+      <div class="project-entry-desc dim">Building a 3D printing farm &mdash; hardware meets orchestration.</div>
+    </div>
   </div>
 </section>
 
@@ -28,31 +34,36 @@ layout: default
   {% for talk in english_talks limit:5 %}
   <div class="talk-row">
     <span class="mono year">{{ talk.date | slice: 0, 4 }}</span>
-    {% if talk.video %}<a class="talk-title" href="{{ talk.video }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% elsif talk.slides %}<a class="talk-title" href="{{ talk.slides }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}<span class="talk-title">{{ talk.title }}</span>{% endif %}
-    <span class="mono muted">{{ talk.event }}</span>
+    {% if talk.video %}<a class="talk-title" href="{{ talk.video | escape }}" target="_blank" rel="noopener">{{ talk.title | escape }}</a>{% elsif talk.slides %}<a class="talk-title" href="{{ talk.slides | escape }}" target="_blank" rel="noopener">{{ talk.title | escape }}</a>{% else %}<span class="talk-title">{{ talk.title | escape }}</span>{% endif %}
+    <span class="mono muted">{{ talk.event | escape }}</span>
   </div>
   {% endfor %}
 </section>
 
-<section class="projects">
-  <a class="project" href="https://printfarmhq.io" target="_blank" rel="noopener">
-    <div class="mono kicker">PROJECT 01</div>
-    <div class="project-name">PrintFarmHQ</div>
-    <div class="project-desc">Building a 3D printing farm &mdash; hardware meets orchestration.</div>
-  </a>
-  <a class="project" href="https://github.com/sighupio/distribution" target="_blank" rel="noopener">
-    <div class="mono kicker">PROJECT 02</div>
-    <div class="project-name">SIGHUP Distribution</div>
-    <div class="project-desc">CNCF-certified Kubernetes distribution, created and maintained in Europe.</div>
-  </a>
+<section class="labeled">
+  <div class="labeled-left"><h2>Archive</h2></div>
+  <div class="labeled-right no-pad">
+    {% for post in paginator.posts %}
+    <a class="archive-row" href="{{ post.url | relative_url }}">
+      <span class="mono muted">{{ post.date | date: "%b %Y" }}</span>
+      <span class="archive-row-title">{{ post.title | escape }}</span>
+    </a>
+    {% endfor %}
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination mono" aria-label="Archive pagination">
+      {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">&larr; NEWER</a>{% else %}<span class="disabled">&larr; NEWER</span>{% endif %}
+      <span class="muted">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">OLDER &rarr;</a>{% else %}<span class="disabled">OLDER &rarr;</span>{% endif %}
+    </nav>
+    {% endif %}
+  </div>
 </section>
 
 <section class="labeled">
-  <div class="labeled-left"><h2>Archive</h2></div>
+  <div class="labeled-left"><h2>Community</h2></div>
   <div class="labeled-right">
-    {% for post in site.posts limit:3 %}
-    <a class="archive-item" href="{{ post.url | relative_url }}">{{ post.title }} <span class="mono muted">{{ post.date | date: "%Y" }}</span></a>
-    {% endfor %}
-    <a class="mono more" href="{{ '/writing/' | relative_url }}">FULL ARCHIVE &rarr;</a>
+    <a class="list-item" href="https://www.cncf.io/people/ambassadors/?p=jacopo-nardiello" target="_blank" rel="noopener">CNCF Ambassador <span class="mono muted">since 2018</span></a>
+    <a class="list-item" href="https://builder.aws.com/community/heroes/JacopoNardiello" target="_blank" rel="noopener">AWS Container Hero <span class="mono muted">since 2020</span></a>
+    <a class="list-item" href="https://linuxfoundation.eu/en/about/advisory-board" target="_blank" rel="noopener">Linux Foundation Europe Advisory Board Member <span class="mono muted">since 2023</span></a>
   </div>
 </section>
