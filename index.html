@@ -13,9 +13,9 @@ layout: default
     <p class="lede">Founded <a href="https://github.com/sighupio" target="_blank" rel="noopener">SIGHUP</a> in 2016 &mdash; one of the leading independent Kubernetes distributions, built entirely in Europe. Now leading Infrastructure Transformation at ING.</p>
   </div>
   <div class="split-right mono">
-    <div>&rarr; CNCF Ambassador, 2018</div>
-    <div>&rarr; AWS Container Hero, 2020</div>
-    <div>&rarr; Linux Foundation Europe, Advisory Board</div>
+    <div>&rarr; CNCF Ambassador since 2018</div>
+    <div>&rarr; AWS Container Hero since 2020</div>
+    <div>&rarr; Linux Foundation Europe Advisory Board Member since 2023</div>
   </div>
 </section>
 
@@ -24,7 +24,8 @@ layout: default
     <h2>Talks</h2>
     <a class="band-link" href="{{ '/talks/' | relative_url }}">ALL &rarr;</a>
   </div>
-  {% for talk in site.data.talks limit:4 %}
+  {% assign english_talks = site.data.talks | where: "language", "en" %}
+  {% for talk in english_talks limit:5 %}
   <div class="talk-row">
     <span class="mono year">{{ talk.date | slice: 0, 4 }}</span>
     {% if talk.video %}<a class="talk-title" href="{{ talk.video }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% elsif talk.slides %}<a class="talk-title" href="{{ talk.slides }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}<span class="talk-title">{{ talk.title }}</span>{% endif %}
