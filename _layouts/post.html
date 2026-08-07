@@ -1,34 +1,13 @@
-<!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }} - {{ site.author.name }}</title>
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="{{ page.metadescription }}">
-
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="/css/post.css">
-        <link rel="stylesheet" href="/css/footer.css">
-        <link rel="stylesheet" href="/css/pygments.css">
-
-        <!-- Typography -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css2?family=Literata:wght@300;600&display=swap' rel='stylesheet'>
-    </head>
-    <body>
-
-        <date>{{ page.date | date: "%-d %B %Y" }}</date>
-        <article-header>
-            <author><a href="{{ site.url }}">{{ site.author.name }}</a></author>
-            <h1>{{ page.title }}</h1>
-        </article-header>
-        <!-- <p class="meta">{{ page.date | date_to_string }}</p> -->
-        <post>
-            {{ content }}
-        </post>
-        {% include footer.html %}
-        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
-    </body>
-</html>
+---
+layout: default
+---
+<main class="post">
+  <div class="post-head">
+    <h1>{{ page.title | escape }}</h1>
+    <div class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</div>
+  </div>
+  <article class="post-body">
+    {{ content }}
+  </article>
+  <div class="post-back"><a href="{{ '/writing/' | relative_url }}">&larr; ALL WRITING</a></div>
+</main>

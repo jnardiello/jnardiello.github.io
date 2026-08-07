@@ -1,6 +1,7 @@
 title: "Jacopo Nardiello's personal blog: Cloud, Infrastructure and AI Automation, Kubernetes, Entrepreneurship"
 description: "Jacopo Nardiello's personal blog. Strategic thinking, Technical articles about Kubernetes, Cloud Technologies, AI Automation and Entrepreneurship."
 url: "https://jnardiello.me"
+baseurl: ""
 
 author:
     name: Jacopo Nardiello
@@ -8,23 +9,30 @@ author:
     x:
       name: "x/jnardiello"
       url: https://x.com/jnardiello
-    github: 
+    github:
       name: github/jnardiello
       url: https://github.com/jnardiello
-    linkedin: 
+    linkedin:
       name: linkedin/jnardiello
       url: https://www.linkedin.com/in/jnardiello/
+    bluesky:
+      name: bluesky/jnardiello
+      url: https://bsky.app/profile/jnardiello.bsky.social
 
 timezone: UTC
 markdown: kramdown
 highlighter: rouge
-host:    0.0.0.0
+host: 0.0.0.0
 
 permalink: /:title.html
 
 kramdown:
     input: GFM
-exclude: [makefile]
+exclude:
+  - makefile
+  - README.md
+  - "jnardiello.me redesign.zip"
+  - vendor
 
 plugins:
   - jekyll-feed

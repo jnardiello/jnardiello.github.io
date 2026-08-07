@@ -1,6 +1,9 @@
-<footer-wrapper>
-    <footer>
-        {% if(page.layout == 'post') %}<author>A blog post by <a href="{{ site.author.x.url }}">{{ site.author.x.name }}</a></author>{% endif %}
-        <credits><a href="https://github.com/jnardiello/tenzo">github/tenzo</a></credits>
-    </footer>
-</footer-wrapper>
+<footer class="site-footer">
+  <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</span>
+  <div class="social">
+    <a href="{{ site.author.github.url }}" target="_blank" rel="noopener">GitHub</a>
+    <a href="{{ site.author.x.url }}" target="_blank" rel="noopener">X</a>
+    <a href="{{ site.author.linkedin.url }}" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="{{ site.author.bluesky.url }}" target="_blank" rel="noopener">Bluesky</a>
+  </div>
+</footer>

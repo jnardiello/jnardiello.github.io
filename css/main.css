@@ -1,0 +1,146 @@
+/* jnardiello.me — bold typographic theme */
+:root {
+  --paper: #ede4d3;
+  --ink: #1c2130;
+  --accent: #d97a2e;
+  --muted: #77726a;
+  --border: 2px solid var(--ink);
+}
+* { box-sizing: border-box; }
+html { -webkit-font-smoothing: antialiased; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Archivo', sans-serif; }
+a { color: var(--ink); }
+a:hover { color: var(--accent); }
+.mono { font-family: 'IBM Plex Mono', monospace; }
+.muted { color: var(--muted); }
+.accent { color: var(--accent); }
+.accent-bg { background: var(--accent); }
+
+/* header */
+.site-header { display: flex; justify-content: space-between; align-items: center; padding: 22px 40px; border-bottom: var(--border); }
+.site-header .brand { font-size: 14px; font-weight: 800; letter-spacing: 0.02em; text-decoration: none; }
+.site-header nav { display: flex; font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+.site-header nav a { text-decoration: none; padding: 8px 18px; border-left: var(--border); }
+.site-header nav a.active { background: var(--ink); color: var(--paper); }
+
+/* hero */
+.hero { border-bottom: var(--border); position: relative; overflow: hidden; }
+.hero-text { padding: 80px 270px 70px 40px; }
+.hero h1 { font-size: clamp(64px, 10.5vw, 118px); font-weight: 900; line-height: 0.92; margin: 0; letter-spacing: -0.04em; text-transform: uppercase; }
+.hero-portrait { position: absolute; right: 40px; bottom: -30px; width: 190px; height: 190px; object-fit: cover; border-radius: 50%; border: var(--border); }
+
+/* split band */
+.split { display: grid; grid-template-columns: 1fr 1fr; border-bottom: var(--border); }
+.split-left { padding: 36px 40px; border-right: var(--border); }
+.split-left .lede { font-size: 16px; line-height: 1.7; margin: 0; font-weight: 500; }
+.split-right { padding: 36px 40px; display: flex; flex-direction: column; gap: 10px; font-size: 13px; background: var(--ink); color: var(--paper); }
+
+/* talks band (home) */
+.band { border-bottom: var(--border); }
+.band-head { display: flex; justify-content: space-between; align-items: baseline; padding: 26px 40px; border-bottom: var(--border); }
+.band-head h2 { font-size: 26px; font-weight: 900; margin: 0; text-transform: uppercase; letter-spacing: -0.01em; }
+.band-link { font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-decoration: none; }
+.talk-row { display: grid; grid-template-columns: 90px 1fr auto; gap: 20px; padding: 18px 40px; border-bottom: 1px solid rgba(28,33,48,0.25); align-items: baseline; }
+.talk-row:last-child { border-bottom: none; }
+.talk-row .year { font-size: 13px; font-weight: 500; }
+.talk-row .talk-title { font-size: 17px; font-weight: 500; text-decoration: none; }
+.talk-row .mono.muted { font-size: 11px; }
+
+/* projects */
+.projects { display: grid; grid-template-columns: 1fr 1fr; border-bottom: var(--border); }
+.project { text-decoration: none; padding: 32px 40px; }
+.project:first-child { border-right: var(--border); }
+.project .kicker { font-size: 11px; margin-bottom: 10px; color: var(--accent); font-weight: 500; }
+.project-name { font-size: 22px; font-weight: 800; margin-bottom: 8px; text-transform: uppercase; }
+.project-desc { font-size: 13px; line-height: 1.7; }
+
+/* labeled two-col sections */
+.labeled { display: grid; grid-template-columns: 280px 1fr; border-bottom: var(--border); }
+.labeled-left { padding: 32px 40px; border-right: var(--border); }
+.labeled-left h2 { font-size: 26px; font-weight: 900; margin: 0; text-transform: uppercase; }
+.labeled-left .big-year { font-size: 44px; letter-spacing: -0.02em; }
+.labeled-right { padding: 32px 40px; display: flex; flex-direction: column; gap: 12px; }
+.labeled-right.no-pad { padding: 0; gap: 0; }
+.labeled.dark { background: var(--ink); color: var(--paper); }
+.labeled.dark .labeled-left { border-right: 2px solid rgba(237,228,211,0.25); }
+.labeled.dark a { color: var(--paper); }
+.labeled.dark a:hover { color: var(--accent); }
+.archive-item, .list-item { font-size: 14px; text-decoration: none; font-weight: 500; }
+.list-item { font-size: 15px; }
+.list-item .mono, .archive-item .mono { font-size: 11px; }
+.more { font-size: 12px; text-decoration: none; color: var(--accent); margin-top: 6px; }
+.social-row { flex-direction: row; gap: 28px; flex-wrap: wrap; font-size: 13px; }
+.social-row a { text-decoration: none; }
+
+/* page heads */
+.page-head { padding: 60px 40px 50px; border-bottom: var(--border); }
+.page-head h1 { font-size: clamp(48px, 7vw, 72px); font-weight: 900; line-height: 0.95; margin: 0; letter-spacing: -0.03em; text-transform: uppercase; }
+.page-head p { font-size: 13px; margin: 18px 0 0; }
+
+/* writing */
+.post-list .post-row { display: grid; grid-template-columns: 140px 1fr; gap: 24px; padding: 26px 40px; border-bottom: 1px solid rgba(28,33,48,0.2); align-items: baseline; text-decoration: none; }
+.post-list .post-row:last-child { border-bottom: var(--border); }
+.post-row .mono { font-size: 12px; }
+.post-row-title { font-size: 19px; font-weight: 800; }
+.rss-band { padding: 32px 40px; border-bottom: var(--border); background: var(--ink); color: var(--paper); font-size: 13px; }
+.rss-band a { color: var(--accent); text-decoration: none; }
+
+/* talks page */
+.talk-detail { padding: 26px 40px; border-bottom: 1px solid rgba(28,33,48,0.2); }
+.talk-detail:last-child { border-bottom: none; }
+.talk-detail-head { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; }
+.talk-detail h3 { font-size: 19px; font-weight: 800; margin: 0; }
+.talk-detail-head .mono { font-size: 11px; flex: none; }
+.talk-detail p { font-size: 13px; line-height: 1.7; margin: 10px 0 0; max-width: 640px; }
+.talk-links { display: flex; gap: 18px; margin-top: 12px; font-size: 12px; }
+.talk-links a { text-decoration: none; font-weight: 500; }
+.accent-link { color: var(--accent); }
+
+/* about */
+.about-hero { display: grid; grid-template-columns: 1fr 300px; border-bottom: var(--border); }
+.about-hero .page-head { border-bottom: none; border-right: var(--border); }
+.about-portrait { display: flex; align-items: center; justify-content: center; padding: 30px; background: var(--ink); }
+.about-portrait img { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 2px solid var(--accent); }
+.prose p { font-size: 15px; line-height: 1.8; margin: 0 0 18px; }
+.prose p:last-child { margin-bottom: 0; }
+
+/* post page */
+.post { max-width: 760px; margin: 0 auto; padding: 0 40px; }
+.post-head { padding: 60px 0 30px; border-bottom: var(--border); }
+.post-head h1 { font-size: clamp(36px, 5vw, 54px); font-weight: 900; line-height: 1.0; margin: 0 0 16px; letter-spacing: -0.02em; text-transform: uppercase; }
+.post-meta { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--muted); }
+.post-body { padding: 36px 0 20px; font-size: 16px; line-height: 1.8; }
+.post-body h2 { font-size: 24px; font-weight: 800; text-transform: uppercase; margin: 36px 0 12px; }
+.post-body h3 { font-size: 18px; font-weight: 800; margin: 28px 0 10px; }
+.post-body img { max-width: 100%; border: var(--border); }
+.post-body blockquote { margin: 24px 0; padding: 4px 24px; border-left: 4px solid var(--accent); font-style: italic; }
+.post-body code { font-family: 'IBM Plex Mono', monospace; font-size: 14px; background: rgba(28,33,48,0.08); padding: 2px 5px; }
+figure.highlight { width: 100%; max-width: 100%; margin: 24px 0; }
+.post-body pre { width: 100%; max-width: 100%; margin: 0; background: var(--ink); color: var(--paper); padding: 0; overflow-x: auto; font-size: 13px; line-height: 1.6; }
+.post-body pre code { display: block; min-width: max-content; background: inherit; padding: 20px; color: inherit; font-size: inherit; line-height: inherit; }
+.post-back { padding: 10px 0 60px; }
+.post-back a { font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-decoration: none; color: var(--accent); font-weight: 500; }
+
+/* footer */
+.site-footer { display: flex; justify-content: space-between; padding: 24px 40px 36px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+.site-footer .social { display: flex; gap: 24px; }
+.site-footer a { text-decoration: none; }
+
+/* mobile */
+@media screen and (max-width: 720px) {
+  .site-header { padding: 16px 20px; flex-direction: column; gap: 14px; }
+  .hero-text { padding: 50px 20px 90px; }
+  .hero h1 { font-size: clamp(46px, 14.5vw, 58px); }
+  .hero-portrait { width: 120px; height: 120px; right: 20px; bottom: -20px; }
+  .split, .projects, .labeled, .about-hero { grid-template-columns: 1fr; }
+  .split-left, .project:first-child, .labeled-left, .about-hero .page-head { border-right: none; }
+  .split-left, .split-right, .project, .labeled-left, .labeled-right, .page-head, .talk-detail, .rss-band { padding-left: 20px; padding-right: 20px; }
+  .labeled-left { padding-bottom: 0; border-bottom: none; }
+  .project:first-child { border-bottom: 1px solid rgba(28,33,48,0.25); }
+  .talk-row { grid-template-columns: 60px 1fr; padding: 14px 20px; }
+  .talk-row .mono.muted { grid-column: 2; }
+  .post-list .post-row { grid-template-columns: 1fr; gap: 6px; padding: 20px; }
+  .post { padding: 0 20px; }
+  .band-head { padding: 20px; }
+  .site-footer { padding: 20px; flex-direction: column; gap: 14px; }
+}

@@ -1,0 +1,8 @@
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}">J&middot;NARDIELLO</a>
+  <nav aria-label="Primary navigation">
+    <a href="{{ '/writing/' | relative_url }}"{% if page.url contains '/writing' or page.layout == 'post' %} class="active" aria-current="page"{% endif %}>Writing</a>
+    <a href="{{ '/talks/' | relative_url }}"{% if page.url contains '/talks' %} class="active" aria-current="page"{% endif %}>Talks</a>
+    <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active" aria-current="page"{% endif %}>About</a>
+  </nav>
+</header>
