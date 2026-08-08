@@ -2,6 +2,7 @@
 layout: post
 title: Goodbye WorkDigital, Goodbye London
 date:   2016-02-04 09:30:00
+description: "Lessons from a year at WorkDigital in London, spanning distributed systems, engineering practices, team collaboration and what came next."
 ---
 
 January was my last month at [WorkDigital](http://workdigital.co.uk/) and, more generally, in London. My year-long journey with them has been a hell of a ride. Their domain of work is complex and particularly interesting. I owe them the chance of working on some really puzzling problems from which I genuinely learnt a lot. 

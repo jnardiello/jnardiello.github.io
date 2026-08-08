@@ -2,6 +2,7 @@
 layout: post
 title:  Presenting Tenzo
 date:   2014-01-20 15:38:00
+description: "Introducing Tenzo, a minimal Jekyll theme focused on readable typography, mobile-first design and simple GitHub Pages deployment."
 ---
 
 [Tenzo](https://github.com/jnardiello/tenzo) is an essential theme for Jekyll (and my first open source project, be kind!). I started crafting it for my personal website and then decided to add some extra-work and ship a ready-to-use package for the public. If you are curious to see it in action, well, you are already doing so.

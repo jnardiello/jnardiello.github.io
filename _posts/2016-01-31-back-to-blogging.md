@@ -2,6 +2,7 @@
 layout: post
 title: Back to blogging
 date:   2016-01-31 17:53:00
+description: "Why I returned to blogging to share practical ideas on software engineering, automation, organizations and occasional finance."
 ---
 
 Despite my best intentions, this blog went dead for a little over two years. 

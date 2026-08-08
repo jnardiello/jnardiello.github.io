@@ -1,13 +1,18 @@
-title: "Jacopo Nardiello's personal blog: Cloud, Infrastructure and AI Automation, Kubernetes, Entrepreneurship"
-description: "Jacopo Nardiello's personal blog. Strategic thinking, Technical articles about Kubernetes, Cloud Technologies, AI Automation and Entrepreneurship."
+title: "Jacopo Nardiello"
+alternate_name: "jnardiello.me"
+description: "Jacopo Nardiello is a founder and technologist building infrastructure, open source and AI automation products, with deep experience in Kubernetes and cloud native."
 url: "https://jnardiello.me"
 baseurl: ""
+lang: en
+locale: en_US
+social_image: /img/portrait.png
 
 author:
     name: Jacopo Nardiello
-    description: Technologist. Open source. Building the next generation of the enterprise. Introvert who speaks at conferences. Founder who still writes code.
+    description: Founder and technologist building infrastructure, open source and AI automation products. Founder of SIGHUP; now leading infrastructure transformation at ING.
     x:
       name: "x/jnardiello"
+      handle: "@jnardiello"
       url: https://x.com/jnardiello
     github:
       name: github/jnardiello
@@ -37,6 +42,5 @@ exclude:
   - vendor
 
 plugins:
-  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap

@@ -1,0 +1,26 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# Jacopo Nardiello
+
+> {{ site.description }}
+
+## Core pages
+
+- [About]({{ '/about/' | absolute_url }}): Biography, current work, community roles, projects and public profiles.
+- [Writing]({{ '/writing/' | absolute_url }}): Technical essays on infrastructure, Kubernetes, cloud native engineering, automation and entrepreneurship.
+- [Talks]({{ '/talks/' | absolute_url }}): Conference talks and presentations from 2014 to today.
+- [RSS feed]({{ '/feed.xml' | absolute_url }}): Updates for published articles.
+- [Sitemap]({{ '/sitemap.xml' | absolute_url }}): Canonical inventory of public pages.
+
+## Projects
+
+- [SIGHUP Distribution](https://github.com/sighupio/distribution): CNCF-certified Kubernetes distribution created and maintained in Europe.
+- [PrintFarmHQ](https://printfarmhq.io): Management software for manufacturing and 3D printing farms.
+
+## Writing
+
+{% for post in site.posts %}- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.description | default: post.excerpt | strip_html | strip_newlines | strip }}
+{% endfor %}

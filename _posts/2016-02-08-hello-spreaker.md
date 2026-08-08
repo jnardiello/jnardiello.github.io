@@ -2,6 +2,7 @@
 layout: post
 title: Hello Spreaker
 date:   2016-02-08 11:30:00
+description: "Joining Spreaker as a backend and architecture engineer to work on infrastructure automation, distributed systems and podcasting technology."
 ---
 
 ![Hello Spreaker](https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11078257_10152831403801347_8094100540044052540_o.jpg)

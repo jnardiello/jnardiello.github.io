@@ -2,6 +2,7 @@
 layout: post
 title:  Hello world
 date:   2014-01-20 14:55:00
+description: "Why I moved my personal website to Jekyll and GitHub Pages to own my content, keep the stack simple and make writing the focus."
 ---
 
 After quite a while I *finally* launched my personal website. I've tried multiple times in the past and I've been using different platforms (wordpress, medium, ghost) but in the end i was never happy with the final result. I've spent by far too many hours trying to build a virtual place i'd be happy to call "home".  

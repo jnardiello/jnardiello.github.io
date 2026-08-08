@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  Managinig sensitive data in git repositories
+title:  Managing sensitive data in Git repositories
 date:   2017-11-06 23:00:00
+description: "A practical guide to encrypting secrets in Git repositories with git-crypt and GPG, including installation and team key management."
 ---
 
 More often than not, especially if you work with operations, you end up managing sensitive data both for your projects and, more importantly, for your clients. Screwing up usually have devastating consequences.
